@@ -8,7 +8,7 @@ with open("Exame.txt", "r") as exame:
         nota_exame = float(input(f"Digite a nota do exame do aluno(a) {nome}: "))
 
         nova_media = (nota + nota_exame) / 2
-        if nova_media > 7:
+        if nova_media >= 7:
             with open ("Aprovados.txt","a") as aprovados:
                 aprovados.write(f"{nome} - Media: {nova_media:.2f} - Aprovado pos exame\n")
         else:
