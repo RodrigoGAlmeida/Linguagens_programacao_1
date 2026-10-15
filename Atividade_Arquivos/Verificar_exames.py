@@ -9,8 +9,8 @@ with open("Exame.txt", "r") as exame:
 
         nova_media = (nota + nota_exame) / 2
         if nova_media > 7:
-            with open ("Aprovados.txt" "a") as aprovados:
+            with open ("Aprovados.txt","a") as aprovados:
                 aprovados.write(f"{nome} - Media: {nova_media:.2f} - Aprovado pos exame\n")
         else:
-            with open ("Reprovados.txt" "a") as reprovados:
+            with open ("Reprovados.txt","a") as reprovados:
                 reprovados.write(f"{nome} - Media: {nova_media:.2f} - Reprovado pos exame\n")
