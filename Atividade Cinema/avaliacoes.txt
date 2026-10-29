@@ -1,0 +1,9 @@
+23;Bom
+45;Ruim
+10;Otimo
+22;Otimo
+65;Regular
+15;Bom
+10;Otimo
+55;Regular
+89;Pessimo
