@@ -16,10 +16,10 @@ with open("Notas.txt", "r") as notas:
                 nota.append(numero)
 
         media = sum(nota)/3
-        if media > 7:
+        if media >= 7:
             with open("Aprovados.txt","a") as aprovados:
                 aprovados.write(f"{nome} - Media: {media:.2f}\n")
-        elif media> 5:
+        elif media>= 5:
              with open("Exame.txt","a") as exame:
                 exame.write(f"{nome} - Media: {media:.2f}\n")       
         else:
